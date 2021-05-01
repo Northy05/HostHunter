@@ -15,7 +15,7 @@ if __name__ == '__main__':
         host = "http://check-host.net/ip-info?host=" + host
         response = requests.get(host,headers=user_agent,verify=False)
         if(valid in response.text):
-            print(f'[-] Checking {host} Valid Host ! {valid} Found In Response ++++++++++++++++++++')
+            print(f'[-] Checking {host} Valid Host ! {valid} HIT TEST ON TELKOM+')
             with open("mano.txt","a") as mano:
                 mano.write(host+"\n")
         else:
